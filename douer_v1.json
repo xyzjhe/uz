@@ -32,7 +32,7 @@
   ],
   "vod": [
     {
-      "name": "「盘」TG搜",
+      "name": "[盘] TG搜",
       "version": 2,
       "remark": "",
       "env": "TG搜代理地址##默认直接访问 https://t.me/s/ 有自己的代理服务填入即可，没有不用改动。",
@@ -41,98 +41,98 @@
       "type": 101
     },
     {
-      "name": "「盘」玩偶",
+      "name": "[盘] 玩偶",
       "version": 3,
       "webSite": "http://wogg.xxooo.cf",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/wobg.js",
       "type": 101
     },
     {
-      "name": "「盘」木偶",
+      "name": "[盘] 木偶",
       "version": 2,
       "webSite": "https://666.666291.xyz",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/mogg.js",
       "type": 101
     },
     {
-      "name": "「盘」闪电",
+      "name": "[盘] 闪电",
       "version": 1,
       "webSite": "http://1.95.79.193/",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/shandian.js",
       "type": 101
     },
     {
-      "name": "「盘」蜡笔",
+      "name": "[盘] 蜡笔",
       "version": 3,
       "webSite": "http://feimaoai.site",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/labipan.js",
       "type": 101
     },
     {
-      "name": "「盘」虎斑",
+      "name": "[盘] 虎斑",
       "version": 1,
       "webSite": "http://103.45.162.207:20720",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/huban.js",
       "type": 101
     },
     {
-      "name": "「盘」二小",
+      "name": "[盘] 二小",
       "version": 1,
       "webSite": "https://2xiaopan.fun",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/erxiao.js",
       "type": 101
     },
     {
-      "name": "「盘」小米",
+      "name": "[盘] 小米",
       "version": 3,
       "webSite": "https://xiaomiai.site",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/xiaomi.js",
       "type": 101
     },
     {
-      "name": "「盘」至臻",
+      "name": "[盘] 至臻",
       "version": 3,
       "webSite": "https://mihdr.top",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/zhizhen.js",
       "type": 101
     },
     {
-      "name": "「盘」欧歌",
+      "name": "[盘] 欧歌",
       "version": 3,
       "webSite": "https://woog.nxog.eu.org",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/ouge.js",
       "type": 101
     },
     {
-      "name": "「盘」多多",
+      "name": "[盘] 多多",
       "version": 3,
       "webSite": "https://tv.yydsys.top",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/duoduo.js",
       "type": 101
     },
     {
-      "name": "「盘」奥秘",
+      "name": "[盘] 奥秘",
       "version": 3,
       "webSite": "https://vip.omii.top",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/aomipan.js",
       "type": 101
     },
     {
-      "name": "「盘」大玩",
+      "name": "[盘] 大玩",
       "version": 1,
       "webSite": "http://149.88.87.18:6688",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/dawanou.js",
       "type": 101
     },
     {
-      "name": "「盘」南风",
+      "name": "[盘] 南风",
       "version": 1,
       "webSite": "https://www.nanf.cc",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/nanfdj.js",
       "type": 101
     },
     {
-      "name": "「盘」雷鲸",
+      "name": "[盘] 雷鲸",
       "version": 4,
       "remark": "",
       "webSite": "https://www.leijing.xyz",
@@ -142,7 +142,7 @@
       "type": 100
     },
     {
-      "name": "「盘」趣盘搜",
+      "name": "[盘] 趣盘搜",
       "version": 3,
       "remark": "",
       "webSite": "https://pan.funletu.com",
@@ -152,7 +152,7 @@
       "type": 100
     },
     {
-      "name": "「盘」天逸搜",
+      "name": "[盘] 天逸搜",
       "version": 3,
       "remark": "",
       "webSite": "https://www.tianyiso.com",
@@ -162,7 +162,7 @@
       "type": 100
     },
     {
-      "name": "「盘」PanSearch",
+      "name": "[盘] PanSearch",
       "version": 1,
       "remark": "",
       "webSite": "https://www.pansearch.me",
