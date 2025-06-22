@@ -1,8 +1,8 @@
 //@name:[盘] TG免代纯搜
-//@version:1
-//@webSite:网盘资源综合@yunpansall
+//@version:2
+//@webSite:123资源@zyfb123&网盘资源综合@yunpansall|1
 //@env:TG搜API地址##TG搜索API地址，默认: http://tgsou.fish2018.ip-ddns.com
-//@remark:格式 频道名称1@频道id1&频道名称2@频道id2，使用聚合搜索API，支持群组搜索
+//@remark:格式 频道名称@频道id|搜索数量&频道名称@频道id，支持自定义每频道搜索数量，默认3个
 //@order: B
 
 // ignore
@@ -49,7 +49,7 @@ import { cheerio, Crypto, Encrypt, JSONbig } from '../../core/core/uz3lib.js'
 // ignore
 
 const appConfig = {
-    _webSite: '网盘资源综合@yunpansall',
+    _webSite: '123资源@zyfb123&网盘资源综合@yunpansall|1',
     /**
      * 网站主页，uz 调用每个函数前都会进行赋值操作
      * 如果不想被改变 请自定义一个变量
@@ -219,6 +219,48 @@ async function getVideoPlayUrl(args) {
 }
 
 /**
+ * 解析频道配置，支持自定义搜索数量
+ * @param {string} webSite - 配置字符串
+ * @returns {Array} 频道配置数组
+ */
+function parseChannelConfig(webSite) {
+    const channels = []
+    const items = webSite.split('&')
+
+    for (const item of items) {
+        if (!item.trim()) continue
+
+        const parts = item.split('@')
+        if (parts.length < 2) continue
+
+        const channelName = parts[0].trim()
+        const channelIdAndCount = parts[1].trim()
+
+        // 检查是否有自定义数量 (使用 | 分隔符)
+        let channelId, count = 3 // 默认数量为3
+
+        if (channelIdAndCount.includes('|')) {
+            const idCountParts = channelIdAndCount.split('|')
+            channelId = idCountParts[0].trim()
+            const customCount = parseInt(idCountParts[1])
+            if (!isNaN(customCount) && customCount > 0) {
+                count = customCount
+            }
+        } else {
+            channelId = channelIdAndCount
+        }
+
+        channels.push({
+            name: channelName,
+            id: channelId,
+            count: count
+        })
+    }
+
+    return channels
+}
+
+/**
  * 搜索视频 - 核心功能
  * @param {UZArgs} args
  * @returns {@Promise<JSON.stringify(new RepVideoList())>}
@@ -232,28 +274,56 @@ async function searchVideo(args) {
             appConfig.tgs = tgsApi
         }
 
-        // 从配置中提取频道ID列表
-        const channelIds = appConfig.webSite.split('&').map((item) => {
-            return item.split('@')[1]
-        })
-        const channelUsername = channelIds.join(',')
+        // 解析频道配置
+        const channels = parseChannelConfig(appConfig.webSite)
 
-        // 构建搜索API请求URL
-        const searchUrl = `${appConfig.tgs}?pic=false&count=10&channelUsername=${encodeURIComponent(channelUsername)}&keyword=${encodeURIComponent(args.searchWord)}`
-        
-        console.log('搜索URL:', searchUrl)
-        
-        // 调用TG搜索API
-        const res = await req(searchUrl)
-        
-        if (res.data && res.data.results) {
-            // 解析API返回的数据
-            const videoList = parseAPIResults(res.data.results, args.searchWord)
-            
-            // 去重处理
-            backData.data = deduplicateVideoListByLinks(videoList)
+        if (channels.length === 0) {
+            console.log('没有有效的频道配置')
+            return JSON.stringify(backData)
         }
-        
+
+        console.log('频道配置:', channels)
+
+        // 创建频道限制映射
+        const channelLimits = {}
+        channels.forEach(channel => {
+            channelLimits[channel.id] = channel.count
+        })
+
+        // 为每个频道分别搜索
+        const allVideoLists = []
+
+        for (const channel of channels) {
+            try {
+                // 构建单个频道的搜索API请求URL
+                const searchUrl = `${appConfig.tgs}?pic=false&count=${channel.count}&channelUsername=${encodeURIComponent(channel.id)}&keyword=${encodeURIComponent(args.searchWord)}`
+
+                console.log(`搜索频道 ${channel.name}(${channel.id}) 数量:${channel.count}`)
+                console.log('搜索URL:', searchUrl)
+
+                // 调用TG搜索API
+                const res = await req(searchUrl)
+
+                if (res.data && res.data.results) {
+                    // 解析API返回的数据，传递频道限制
+                    const videoList = parseAPIResults(res.data.results, args.searchWord, channelLimits)
+                    allVideoLists.push(...videoList)
+                }
+
+                // 添加小延迟避免请求过快
+                await new Promise(resolve => setTimeout(resolve, 100))
+
+            } catch (channelError) {
+                console.error(`频道 ${channel.name} 搜索失败:`, channelError)
+                // 继续处理其他频道
+            }
+        }
+
+        // 合并所有结果并去重
+        backData.data = deduplicateVideoListByLinks(allVideoLists)
+
+        console.log(`总共获取到 ${backData.data.length} 个去重后的结果`)
+
     } catch (error) {
         console.error('搜索错误:', error)
         backData.error = error.toString()
@@ -265,18 +335,17 @@ async function searchVideo(args) {
  * 解析TG搜索API返回的结果
  * @param {Array} results - API返回的results数组
  * @param {string} searchWord - 搜索关键词
+ * @param {Object} channelLimits - 频道限制映射 {channelId: count}
  * @returns {Array} 视频列表
  */
-function parseAPIResults(results, searchWord) {
+function parseAPIResults(results, searchWord, channelLimits = {}) {
     const videoList = []
 
-    // 创建频道名称映射
+    // 创建频道名称映射 - 使用新的解析逻辑
     const channelMap = new Map()
-    appConfig.webSite.split('&').forEach(item => {
-        const parts = item.split('@')
-        if (parts.length === 2) {
-            channelMap.set(parts[1], parts[0]) // 键: id, 值: name
-        }
+    const channels = parseChannelConfig(appConfig.webSite)
+    channels.forEach(channel => {
+        channelMap.set(channel.id, channel.name) // 键: id, 值: name
     })
 
     for (const result of results) {
@@ -292,7 +361,16 @@ function parseAPIResults(results, searchWord) {
         if (!contentStr) continue
 
         // 解析内容项: "链接1$$标题1##链接2$$标题2##..."
-        const items = contentStr.split('##')
+        let items = contentStr.split('##')
+
+        // 根据频道限制截取结果数量
+        const channelId = Object.keys(channelLimits).find(id =>
+            channelName.includes(id) || id === channelName
+        )
+        if (channelId && channelLimits[channelId]) {
+            items = items.slice(0, channelLimits[channelId])
+            console.log(`频道 ${channelName} 限制为 ${channelLimits[channelId]} 个结果，实际处理 ${items.length} 个`)
+        }
 
         for (const item of items) {
             if (!item.trim()) continue
