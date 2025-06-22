@@ -1,8 +1,8 @@
-//@name:[盘] TG免代纯搜
-//@version:2
+//@name:[盘] TG纯搜
+//@version:3
 //@webSite:123资源@zyfb123&网盘资源综合@yunpansall|1
-//@env:TG搜API地址##TG搜索API地址，默认: http://tgsou.fish2018.ip-ddns.com
-//@remark:格式 频道名称@频道id|搜索数量&频道名称@频道id，支持自定义每频道搜索数量，默认3个
+//@env:TG搜索API地址，默认: http://tgsou.fish2018.ip-ddns.com
+//@remark:格式 频道名称@频道id|搜索数量&频道名称@频道id，支持自定义每频道搜索数量，默认3个，支持5种网盘：天翼/夸克/UC/阿里/123
 //@order: B
 
 // ignore
@@ -78,7 +78,7 @@ const appConfig = {
 }
 
 // --- 全局常量/配置 ---
-// 统一的网盘配置 - 单一数据源
+// 统一的网盘配置 - 仅支持UZ应用兼容的网盘
 const CLOUD_PROVIDERS = {
     tianyi: {
         name: '天翼',
@@ -98,16 +98,9 @@ const CLOUD_PROVIDERS = {
     },
     pan123: {
         name: '123',
-        domains: ['123684.com', '123865.com', '123912.com', '123pan.com', '123pan.cn', '123592.com']
-    },
-    baidu: {
-        name: '百度',
-        domains: ['pan.baidu.com']
-    },
-    y115: {
-        name: '115',
-        domains: ['115.com']
+        domains: ['123pan.com', '123pan.cn', '123684.com', '123912.com', '123865.com']
     }
+    // 注意：百度网盘和115网盘在UZ应用中不支持，已移除
 };
 
 // 从统一配置自动生成所需数组
