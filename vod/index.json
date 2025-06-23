@@ -1,10 +1,10 @@
 [
     {
         "name": "[综] HDmoli",
-        "version": 1,
-        "remark": "豆儿出品，不属精品！支持在线播放和网盘",
+        "version": 2,
+        "remark": "🍃豆儿出品，不属精品！支持在线播放和网盘",
         "webSite": "https://www.hdmoli.pro/",
-        "codeID": "iGIXa9WRF2lZfsccI5xtHmFK5kffVqsC",
+        "codeID": "OAxUOePWsN3I7NQfNIO9Il1I1cgolbSa",
         "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/vod/js/Zong_HDmoli.txt",
         "type": 101
     }
