@@ -6,7 +6,7 @@
       "remark": "搜不到就算了，不要那么执着",
       "env": "弹幕解析地址##内置 4 条线路。格式 地址1;地址2",
       "codeID": "4Y6DDMATfbw0Rg0Y2AOGpfmpU2cgspFf",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/danMu/js/danMu2.txt",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/danMu/js/danMu2.txt",
       "type": 400
     }
   ],
@@ -16,7 +16,7 @@
       "version": 22,
       "remark": "iOS14 以上版本可用,App v1.6.54 及以上版本可用",
       "env": "UCCookie##用于播放UC网盘视频&&UC_UT##播放视频自动获取，不可用时点击删除重新获取 cookie ，再重启app&&夸克Cookie##用于播放Quark网盘视频&&阿里Token##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称&&123网盘账号##用于播放123网盘视频&&123网盘密码##用于播放123网盘视频&&天翼网盘账号##用于播放天翼网盘视频&&天翼网盘密码##用于播放天翼网盘视频&&采集解析地址##内置两个，失效不要反馈。格式：名称1@地址1;名称2@地址2",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/panTools/js/panTools2.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/panTools/js/panTools2.js",
       "type": 300
     }
   ],
@@ -26,109 +26,109 @@
       "version": 4,
       "remark": "iOS14 以上版本可用",
       "codeID": "hZC5h9Id3nP6mwaolSXqNemBLQCMFqhw",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/recommend/js/douban.txt",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/recommend/js/douban.txt",
       "type": 200
     }
   ],
   "vod": [
     {
       "name": "TG搜 | 4K",
-      "version": 5,
+      "version": 6,
       "remark": "",
       "env": "TG搜代理地址##默认直接访问 https://t.me/s/ 有自己的代理服务填入即可，没有不用改动。",
-      "webSite": "123资源@zyfb123&天翼日更@tianyirigeng&天翼臻影@tyysypzypd&夸克UC@ucquark&夸克电影@alyp_4K_Movies&夸克剧集@alyp_TV&夸克动漫@alyp_Animation&鱼哥资源@yggpan&CH资源@ChangAn2504",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/tgs.js",
+      "webSite": "123资源@zyfb123&天翼日更@tianyirigeng&天翼臻影@tyysypzypd&云巢@peccxinpd&夸克UC@ucquark&夸克电影@alyp_4K_Movies&夸克剧集@alyp_TV&夸克动漫@alyp_Animation",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/tgs.js",
       "type": 101
     },
     {
       "name": "玩偶 | 4K",
       "version": 3,
       "webSite": "http://wogg.xxooo.cf",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/wobg.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/wobg.js",
       "type": 101
     },
     {
       "name": "木偶 | 4K",
       "version": 2,
       "webSite": "https://666.666291.xyz",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/mogg.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/mogg.js",
       "type": 101
     },
     {
       "name": "闪电 | 4K",
       "version": 1,
       "webSite": "http://1.95.79.193/",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/shandian.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/shandian.js",
       "type": 101
     },
     {
       "name": "蜡笔 | 4K",
       "version": 3,
       "webSite": "http://feimaoai.site",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/labipan.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/labipan.js",
       "type": 101
     },
     {
       "name": "虎斑 | 4K",
       "version": 1,
       "webSite": "http://103.45.162.207:20720",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/huban.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/huban.js",
       "type": 101
     },
     {
       "name": "二小 | 4K",
       "version": 1,
       "webSite": "https://2xiaopan.fun",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/erxiao.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/erxiao.js",
       "type": 101
     },
     {
       "name": "小米 | 4K",
       "version": 3,
       "webSite": "https://xiaomiai.site",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/xiaomi.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/xiaomi.js",
       "type": 101
     },
     {
       "name": "至臻 | 4K",
       "version": 3,
       "webSite": "https://mihdr.top",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/zhizhen.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/zhizhen.js",
       "type": 101
     },
     {
       "name": "欧歌 | 4K",
       "version": 3,
       "webSite": "https://woog.nxog.eu.org",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/ouge.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/ouge.js",
       "type": 101
     },
     {
       "name": "多多 | 4K",
       "version": 3,
       "webSite": "https://tv.yydsys.top",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/duoduo.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/duoduo.js",
       "type": 101
     },
     {
       "name": "奥秘 | 4K",
       "version": 3,
       "webSite": "https://vip.omii.top",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/aomipan.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/aomipan.js",
       "type": 101
     },
     {
       "name": "大玩 | 4K",
       "version": 1,
       "webSite": "http://149.88.87.18:6688",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/dawanou.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/dawanou.js",
       "type": 101
     },
     {
       "name": "南风 | 4K",
       "version": 1,
       "webSite": "https://www.nanf.cc",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/nanfdj.js",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/nanfdj.js",
       "type": 101
     },
     {
@@ -138,16 +138,16 @@
       "webSite": "https://www.leijing.xyz",
       "codeID": "GgryhjYVgQMDUw4f",
       "instance": "leiJing20241126",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/leijing.txt",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/leijing.txt",
       "type": 100
     },
     {
       "name": "TG纯搜 | 4K",
-      "version": 4,
-      "remark": "免代理纯搜索无图片，格式 频道名称@频道id|搜索数量&频道名称@频道id，支持自定义每频道搜索数量，默认3个，支持5种网盘：天翼/夸克/UC/阿里/123",
+      "version": 5,
+      "remark": "🍃豆儿出品，不属精品！免代理纯搜索，格式 频道名称@频道id|搜索数量&频道名称@频道id，支持自定义每频道搜索数量，默认3个",
       "env": "TG搜API地址##https://tgsou.252035.xyz",
-      "webSite": "123资源@zyfb123|2&天翼日更@tianyirigeng&天翼臻影@tyysypzypd&夸克UC@ucquark|5&夸克电影@alyp_4K_Movies&夸克剧集@alyp_TV&夸克动漫@alyp_Animation&鱼哥资源@yggpan&CH资源@ChangAn2504",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/tgs_api.js",
+      "webSite": "123资源@zyfb123&天翼日更@tianyirigeng&天翼臻影@tyysypzypd&云巢@peccxinpd&夸克UC@ucquark&夸克电影@alyp_4K_Movies&夸克剧集@alyp_TV&夸克动漫@alyp_Animation",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/tgs_api.js",
       "type": 101
     },
     {
@@ -157,7 +157,7 @@
       "webSite": "https://pan.funletu.com",
       "codeID": "LO5aQSJYBZLrRD1g",
       "instance": "funletu20241124",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/funletu.txt",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/funletu.txt",
       "type": 100
     },
     {
@@ -167,7 +167,7 @@
       "webSite": "https://www.tianyiso.com",
       "codeID": "DU9z425w42hk9B8l",
       "instance": "tianyiso20241129",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/tianyiso.txt",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/tianyiso.txt",
       "type": 100
     },
     {
@@ -177,7 +177,7 @@
       "webSite": "https://www.pansearch.me",
       "codeID": "UM9WK6x3sPm3mbUgJB2dJNs59vTyNynm",
       "instance": "leiJing20241126",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/woleigedouer/uzVideo-extensions/main/vod/js/pansearch.txt",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/pansearch.txt",
       "type": 101
     }
   ]
