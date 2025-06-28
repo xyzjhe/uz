@@ -1,11 +1,11 @@
 [
     {
-        "name": "[盘] 校长",
+        "name": "✨豆瓣",
         "version": 1,
         "remark": "🍃豆儿出品，不属精品！",
-        "webSite": "https://xzys.fun",
-        "codeID": "7T4PFJobJZegoH1hLUyEL1HOGSoNuwR6",
-        "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/vod/js/Pan_xzys.txt",
+        "webSite": "https://movie.douban.com",
+        "codeID": "SoPT7vwnSGHyDXK5rvC7d7LDFmXyKXel",
+        "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/vod/js/Jian_douban.txt",
         "type": 101
     }
 ]
