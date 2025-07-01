@@ -41,6 +41,15 @@
       "type": 101
     },
     {
+      "name": "🔎TG纯搜",
+      "version": 5,
+      "remark": "🍃豆儿出品，不属精品！免代理纯搜索，格式 频道名称@频道id|搜索数量&频道名称@频道id，支持自定义每频道搜索数量，默认3个",
+      "env": "TG搜API地址##https://tgsou.252035.xyz",
+      "webSite": "123资源@zyfb123&天翼日更@tianyirigeng&天翼臻影@tyysypzypd&云巢@peccxinpd&夸克UC@ucquark&夸克电影@alyp_4K_Movies&夸克剧集@alyp_TV&夸克动漫@alyp_Animation",
+      "api": "https://gh-proxy.com/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/tgs_api.js",
+      "type": 101
+    },
+    {
       "name": "🧸玩偶",
       "version": 3,
       "webSite": "http://wogg.xxooo.cf",
@@ -91,8 +100,8 @@
     },
     {
       "name": "💎至臻",
-      "version": 3,
-      "webSite": "https://mihdr.top",
+      "version": 4,
+      "webSite": "http://www.miqk.cc",
       "api": "https://gh-proxy.com/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/zhizhen.js",
       "type": 101
     },
@@ -142,15 +151,6 @@
       "type": 100
     },
     {
-      "name": "🔎TG纯搜",
-      "version": 5,
-      "remark": "🍃豆儿出品，不属精品！免代理纯搜索，格式 频道名称@频道id|搜索数量&频道名称@频道id，支持自定义每频道搜索数量，默认3个",
-      "env": "TG搜API地址##https://tgsou.252035.xyz",
-      "webSite": "123资源@zyfb123&天翼日更@tianyirigeng&天翼臻影@tyysypzypd&云巢@peccxinpd&夸克UC@ucquark&夸克电影@alyp_4K_Movies&夸克剧集@alyp_TV&夸克动漫@alyp_Animation",
-      "api": "https://gh-proxy.com/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/tgs_api.js",
-      "type": 101
-    },
-    {
       "name": "🔎趣盘搜",
       "version": 3,
       "remark": "",
@@ -169,16 +169,6 @@
       "instance": "tianyiso20241129",
       "api": "https://gh-proxy.com/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/tianyiso.txt",
       "type": 100
-    },
-    {
-      "name": "🔎PanSearch",
-      "version": 1,
-      "remark": "",
-      "webSite": "https://www.pansearch.me",
-      "codeID": "UM9WK6x3sPm3mbUgJB2dJNs59vTyNynm",
-      "instance": "leiJing20241126",
-      "api": "https://gh-proxy.com/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/pansearch.txt",
-      "type": 101
     }
   ]
 }
