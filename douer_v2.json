@@ -151,6 +151,24 @@
       "type": 100
     },
     {
+      "name": "🎓校长",
+      "version": 1,
+      "remark": "🍃豆儿出品，不属精品！",
+      "webSite": "https://xzys.fun",
+      "codeID": "7T4PFJobJZegoH1hLUyEL1HOGSoNuwR6",
+      "api": "https://gh-proxy.com/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/Pan_xzys.txt",
+      "type": 101
+    },
+    {
+      "name": "🎬HDmoli",
+      "version": 2,
+      "remark": "🍃豆儿出品，不属精品！支持在线播放和网盘",
+      "webSite": "https://www.hdmoli.pro/",
+      "codeID": "OAxUOePWsN3I7NQfNIO9Il1I1cgolbSa",
+      "api": "https://gh-proxy.com/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/Zong_HDmoli.txt",
+      "type": 101
+    },
+    {
       "name": "🔎趣盘搜",
       "version": 3,
       "remark": "",
