@@ -1,0 +1,11 @@
+[
+    {
+        "name": "新弹幕扩展",
+        "version": 5,
+        "remark": "v1.6.60 及以上版本可用",
+        "env": "弹幕线路##格式 线路名称1@地址1;线路名称2@地址2",
+        "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/vod/js/danMu4.txt",
+        "codeID": "4PqcO6xPFunsneXlUVMvH0iJuMLDUGrR",
+        "type": 400
+    }
+]
