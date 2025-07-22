@@ -3,9 +3,9 @@
         "name": "自定义弹幕扩展",
         "version": 6,
         "remark": "v1.6.60 及以上版本可用",
-        "env": "自定义弹幕解析接口##格式 线路名称1@地址1|线路名称2@地址2&&自定义弹幕屏蔽列表##使用|分隔，如：广告|推广|关注&&自定义弹幕自定义弹幕采集线路##官采站点，格式 名称1@地址1|名称2@地址2",
+        "env": "自定义弹幕解析接口##格式 线路名称1@地址1|线路名称2@地址2&&自定义弹幕屏蔽列表##使用|分隔，如：广告|推广|关注&&自定义弹幕采集线路##官采站点，格式 名称1@地址1|名称2@地址2",
         "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/vod/js/danMu4.txt",
-        "codeID": "qeQrGCzpkWXDWMAW0Bqw3t4muQa9PSDS",
+        "codeID": "xFLyKTEkVcoRR4lH4izvtEPm8zOY2lyt",
         "type": 400
     }
 ]
