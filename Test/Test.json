@@ -5,7 +5,7 @@
         "remark": "🍃豆儿出品，不属精品！",
         "webSite": "https://movie.douban.com",
         "codeID": "SoPT7vwnSGHyDXK5rvC7d7LDFmXyKXel",
-        "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/vod/js/Jian_douban.txt",
+        "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/Test/js/Jian_douban.txt",
         "type": 101
     },
     {
@@ -14,7 +14,7 @@
         "remark": "🍃豆儿出品，不属精品！硬编码带二级分类筛选版本",
         "webSite": "http://wogg.xxooo.cf",
         "codeID": "Yj5Fvt6Wf901MqxpIKdKmrmmLgwDkjDN",
-        "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/vod/js/wanou.txt",
+        "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/Test/js/wanou.txt",
         "type": 101
     }
 ]
