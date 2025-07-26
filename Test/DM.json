@@ -5,7 +5,7 @@
         "remark": "v1.6.60 及以上版本可用",
         "env": "自定义弹幕解析接口##格式 线路名称1@地址1|线路名称2@地址2&&自定义弹幕屏蔽列表##使用|分隔，如：广告|推广|关注",
         "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/Test/js/danMu4.txt",
-        "codeID": "8TDYOQDxtU1rRigQz2vHcTfekW3P3IoJ",
+        "codeID": "y4S7zyv2sSZhVen1FPn1NSYeCP3npPUN",
         "type": 400
     }
 ]
