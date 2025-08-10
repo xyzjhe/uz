@@ -10,10 +10,10 @@
     },
     {
         "name": "✨豆瓣²",
-        "version": 1,
+        "version": 2,
         "remark": "🍃豆儿出品，不属精品！",
         "webSite": "https://movie.douban.com",
-        "codeID": "noenYZLyLn9sR47965FtDpeHv9ReGOrj",
+        "codeID": "gtYaPmWUEI3zeSo0v16CpR3NFo23G6Uq",
         "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/Test/js/Jian_douban2.txt",
         "type": 101
     },
