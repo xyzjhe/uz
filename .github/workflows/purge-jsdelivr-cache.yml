@@ -1,0 +1,43 @@
+name: Purge jsDelivr Cache
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'uzAio_green.zip'
+      - 'douer_v2.zip'
+      - 'douer_v3.zip'
+
+jobs:
+  purge-cache:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Purge jsDelivr Cache
+      run: |
+        echo "开始清除 jsDelivr CDN 缓存..."
+        
+        # 需要清除缓存的链接
+        urls=(
+          "https://purge.jsdelivr.net/gh/YYDS678/uzVideo-extensions@refs/heads/main/uzAio.zip"
+          "https://purge.jsdelivr.net/gh/woleigedouer/uz@refs/heads/main/uzAio_green.zip"
+          "https://purge.jsdelivr.net/gh/woleigedouer/uz@refs/heads/main/douer_v2.zip"
+          "https://purge.jsdelivr.net/gh/woleigedouer/uz@refs/heads/main/douer_v3.zip"
+        )
+        
+        # 遍历清除每个链接的缓存
+        for url in "${urls[@]}"; do
+          echo "清除缓存: $url"
+          response=$(curl -s -w "%{http_code}" -o /dev/null "$url")
+          
+          if [ "$response" = "200" ]; then
+            echo "✅ 缓存清除成功: $url"
+          else
+            echo "⚠️  缓存清除可能失败: $url (状态码: $response)"
+          fi
+          
+          # 添加短暂延迟避免请求过快
+          sleep 1
+        done
+        
+        echo "jsDelivr CDN 缓存清除完成"
