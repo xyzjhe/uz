@@ -2182,7 +2182,7 @@ class PanBaidu {
     set cookie(newCookie) {
         console.log('更新cookie')
         if (newCookie && newCookie !== this._cookie) {
-            setEnv(this.uzTag, '百度网盘Cookie', newCookie)
+            setEnv(this.uzTag, '百度Cookie', newCookie)
         }
         this._cookie = newCookie
     }
