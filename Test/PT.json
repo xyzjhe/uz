@@ -1,7 +1,7 @@
 [
     {
       "name": "网盘解析工具",
-      "version": 28,
+      "version": 29,
       "remark": "",
       "env": "百度Cookie##用于播放百度视频&&UCCookie##用于播放UC视频&&夸克Cookie##用于播放Quark视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称&&123账号##用于播放123视频&&123密码##用于播放123视频&&天翼账号##用于播放天翼视频&&天翼密码##用于播放天翼视频&&采集解析地址##内置两个，失效不要反馈。格式：名称1@地址1;名称2@地址2",
       "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/Test/js/panTools2.js",
