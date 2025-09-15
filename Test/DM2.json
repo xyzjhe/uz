@@ -1,0 +1,11 @@
+[
+    {
+        "name": "新弹幕扩展",
+        "version": 1,
+        "remark": "",
+        "env": "新弹幕扩展API地址##默认: https://dmapi.do-u.me/87654321",
+        "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/Test/js/danMu5.txt",
+        "codeID": "bhSPosKiHncwO794LuDFqYtOlcbD5Ap3",
+        "type": 400
+    }
+]
