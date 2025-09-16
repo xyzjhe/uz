@@ -1,23 +1,5 @@
 [
     {
-        "name": "✨豆瓣",
-        "version": 1,
-        "remark": "🍃豆儿出品，不属精品！",
-        "webSite": "https://movie.douban.com",
-        "codeID": "SoPT7vwnSGHyDXK5rvC7d7LDFmXyKXel",
-        "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/Test/js/Jian_douban.txt",
-        "type": 101
-    },
-    {
-        "name": "✨豆瓣²",
-        "version": 3,
-        "remark": "🍃豆儿出品，不属精品！",
-        "webSite": "https://movie.douban.com",
-        "codeID": "SiU95hHc6tmlpYMzdZ8CgCi6izNKs2dT",
-        "api": "https://raw.githubusercontent.com/woleigedouer/uz/refs/heads/main/Test/js/Jian_douban2.txt",
-        "type": 101
-    },
-    {
         "name": "🧸玩偶²",
         "version": 1,
         "remark": "🍃豆儿出品，不属精品！硬编码带二级分类筛选版本",
